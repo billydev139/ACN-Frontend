@@ -196,7 +196,7 @@
 
 .custom-NavBar {
   background: linear-gradient(120deg, rgba(132, 136, 171, 0.1), rgba(121, 150, 197, 0.8)),
-              url('../public/Carrosserie/Banner.jpeg') no-repeat center center; /* Bild aus lokalem Pfad */
+              url('../public/AcnAG/Carrosserie/Banner.avif') no-repeat center center; /* Bild aus lokalem Pfad */
   background-size: cover; /* Sicherstellen, dass das Bild den gesamten Hintergrund abdeckt */
   backdrop-filter: blur(30px); /* Erhöhter Unschärfe-Wert */
   -webkit-backdrop-filter:
