@@ -1,0 +1,129 @@
+/* Light (300) Normal */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-Light.eot');
+    src: local('TT Supermolot Neue Light'), local('TTSupermolotNeue-Light'),
+        url('TTSupermolotNeue-Light.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-Light.woff2') format('woff2'),
+        url('TTSupermolotNeue-Light.woff') format('woff'),
+        url('TTSupermolotNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Light (300) Italic */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-LightItalic.eot');
+    src: local('TT Supermolot Neue Light Italic'), local('TTSupermolotNeue-LightItalic'),
+        url('TTSupermolotNeue-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-LightItalic.woff2') format('woff2'),
+        url('TTSupermolotNeue-LightItalic.woff') format('woff'),
+        url('TTSupermolotNeue-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Regular (400) Normal */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-Regular.eot');
+    src: local('TT Supermolot Neue Regular'), local('TTSupermolotNeue-Regular'),
+        url('TTSupermolotNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-Regular.woff2') format('woff2'),
+        url('TTSupermolotNeue-Regular.woff') format('woff'),
+        url('TTSupermolotNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Regular (400) Italic */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-RegularItalic.eot');
+    src: local('TT Supermolot Neue Regular Italic'), local('TTSupermolotNeue-RegularItalic'),
+        url('TTSupermolotNeue-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-RegularItalic.woff2') format('woff2'),
+        url('TTSupermolotNeue-RegularItalic.woff') format('woff'),
+        url('TTSupermolotNeue-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Medium (500) Normal */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-Medium.eot');
+    src: local('TT Supermolot Neue Medium'), local('TTSupermolotNeue-Medium'),
+        url('TTSupermolotNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-Medium.woff2') format('woff2'),
+        url('TTSupermolotNeue-Medium.woff') format('woff'),
+        url('TTSupermolotNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Medium (500) Italic */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-MediumItalic.eot');
+    src: local('TT Supermolot Neue Medium Italic'), local('TTSupermolotNeue-MediumItalic'),
+        url('TTSupermolotNeue-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-MediumItalic.woff2') format('woff2'),
+        url('TTSupermolotNeue-MediumItalic.woff') format('woff'),
+        url('TTSupermolotNeue-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* DemiBold (600) Normal */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-DemiBold.eot');
+    src: local('TT Supermolot Neue DemiBold'), local('TTSupermolotNeue-DemiBold'),
+        url('TTSupermolotNeue-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-DemiBold.woff2') format('woff2'),
+        url('TTSupermolotNeue-DemiBold.woff') format('woff'),
+        url('TTSupermolotNeue-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* DemiBold (600) Italic */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-DemiBoldItalic.eot');
+    src: local('TT Supermolot Neue DemiBold Italic'), local('TTSupermolotNeue-DemiBoldItalic'),
+        url('TTSupermolotNeue-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-DemiBoldItalic.woff2') format('woff2'),
+        url('TTSupermolotNeue-DemiBoldItalic.woff') format('woff'),
+        url('TTSupermolotNeue-DemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Bold (700) Normal */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-Bold.eot');
+    src: local('TT Supermolot Neue Bold'), local('TTSupermolotNeue-Bold'),
+        url('TTSupermolotNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-Bold.woff2') format('woff2'),
+        url('TTSupermolotNeue-Bold.woff') format('woff'),
+        url('TTSupermolotNeue-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold (700) Italic */
+@font-face {
+    font-family: 'TT Supermolot Neue';
+    src: url('TTSupermolotNeue-BoldItalic.eot');
+    src: local('TT Supermolot Neue Bold Italic'), local('TTSupermolotNeue-BoldItalic'),
+        url('TTSupermolotNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('TTSupermolotNeue-BoldItalic.woff2') format('woff2'),
+        url('TTSupermolotNeue-BoldItalic.woff') format('woff'),
+        url('TTSupermolotNeue-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}

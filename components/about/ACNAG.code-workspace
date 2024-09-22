@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../Applications/GITHUB-Projekte/Webseiten/ACN_AG_WEB/ACNAG"
+		},
+		{
+			"path": "../../app"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../public"
+		},
+		{
+			"path": "../../utils"
+		}
+	],
+	"settings": {}
+}

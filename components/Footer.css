@@ -1,0 +1,125 @@
+
+
+
+/* Top */
+.custom-shape-divider-top-1726425485 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 0;
+}
+
+.custom-shape-divider-top-1726425485 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 407px;
+  transform: rotateY(180deg);
+  animation: randomWave 10s ease-in-out infinite;
+
+}
+
+.custom-shape-divider-top-1726425485 .shape-fill {
+  fill: url(#gradient);
+  
+}
+
+@keyframes randomWave {
+  0% {
+      transform: translateX(0) scale(1) rotateY(180deg);
+  }
+  25% {
+      transform: translateX(-15%) scale(1.05) rotateY(180deg);
+  }
+  50% {
+      transform: translateX(-25%) scale(0.98) rotateY(180deg);
+  }
+  75% {
+      transform: translateX(-20%) scale(1.02) rotateY(180deg);
+  }
+  100% {
+      transform: translateX(0) scale(1) rotateY(180deg);
+  }
+}
+
+
+
+
+/* Bottom  */
+.custom-shape-divider-bottom-1726424647 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 0;
+}
+
+.custom-shape-divider-bottom-1726424647 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 428px;
+  transform: rotateY(180deg);
+  /* Animation */
+  animation: wave 10s ease-in-out infinite;
+}
+
+.custom-shape-divider-bottom-1726424647 .shape-fill {
+  fill: url(#gradient);
+}
+
+/* Animation */
+@keyframes wave {
+  0% {
+      transform: translateX(0) rotateY(180deg);
+  }
+  50% {
+      transform: translateX(-25%) rotateY(180deg);
+  }
+  100% {
+      transform: translateX(0) rotateY(180deg);
+  }
+}
+
+
+
+.footer {
+    background-color: black;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer.container {
+    max-width: 1200px;
+    margin-top:  20px;
+    padding: 0 20px;
+  }
+  
+  .footer h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+    color: white;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer li {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  
+
+ 
+ 

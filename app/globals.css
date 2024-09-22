@@ -1,0 +1,624 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light (300) Normal */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-Light.eot');
+  src: local('TT Supermolot Neue Light'), local('TTSupermolotNeue-Light'),
+      url('/font/TTSupermolotNeue-Light.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-Light.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-Light.woff') format('woff'),
+      url('/font/TTSupermolotNeue-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light (300) Italic */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-LightItalic.eot');
+  src: local('TT Supermolot Neue Light Italic'), local('TTSupermolotNeue-LightItalic'),
+      url('/font/TTSupermolotNeue-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-LightItalic.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-LightItalic.woff') format('woff'),
+      url('/font/TTSupermolotNeue-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular (400) Normal */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-Regular.eot');
+  src: local('TT Supermolot Neue Regular'), local('TTSupermolotNeue-Regular'),
+      url('/font/TTSupermolotNeue-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-Regular.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-Regular.woff') format('woff'),
+      url('/font/TTSupermolotNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Regular (400) Italic */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-RegularItalic.eot');
+  src: local('TT Supermolot Neue Regular Italic'), local('TTSupermolotNeue-RegularItalic'),
+      url('/font/TTSupermolotNeue-RegularItalic.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-RegularItalic.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-RegularItalic.woff') format('woff'),
+      url('/font/TTSupermolotNeue-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium (500) Normal */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-Medium.eot');
+  src: local('TT Supermolot Neue Medium'), local('TTSupermolotNeue-Medium'),
+      url('/font/TTSupermolotNeue-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-Medium.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-Medium.woff') format('woff'),
+      url('/font/TTSupermolotNeue-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium (500) Italic */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-MediumItalic.eot');
+  src: local('TT Supermolot Neue Medium Italic'), local('TTSupermolotNeue-MediumItalic'),
+      url('/font/TTSupermolotNeue-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-MediumItalic.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-MediumItalic.woff') format('woff'),
+      url('/font/TTSupermolotNeue-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* DemiBold (600) Normal */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-DemiBold.eot');
+  src: local('TT Supermolot Neue DemiBold'), local('TTSupermolotNeue-DemiBold'),
+      url('/font/TTSupermolotNeue-DemiBold.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-DemiBold.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-DemiBold.woff') format('woff'),
+      url('/font/TTSupermolotNeue-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* DemiBold (600) Italic */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-DemiBoldItalic.eot');
+  src: local('TT Supermolot Neue DemiBold Italic'), local('TTSupermolotNeue-DemiBoldItalic'),
+      url('/font/TTSupermolotNeue-DemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-DemiBoldItalic.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-DemiBoldItalic.woff') format('woff'),
+      url('/font/TTSupermolotNeue-DemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold (700) Normal */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-Bold.eot');
+  src: local('TT Supermolot Neue Bold'), local('TTSupermolotNeue-Bold'),
+      url('/font/TTSupermolotNeue-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-Bold.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-Bold.woff') format('woff'),
+      url('/font/TTSupermolotNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold (700) Italic */
+@font-face {
+  font-family: 'TT Supermolot Neue';
+  src: url('/font/TTSupermolotNeue-BoldItalic.eot');
+  src: local('TT Supermolot Neue Bold Italic'), local('TTSupermolotNeue-BoldItalic'),
+      url('/font/TTSupermolotNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/font/TTSupermolotNeue-BoldItalic.woff2') format('woff2'),
+      url('/font/TTSupermolotNeue-BoldItalic.woff') format('woff'),
+      url('/font/TTSupermolotNeue-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+.nav_img{
+  object-position: center 2rem;
+}
+
+
+
+
+.pdf-bg {
+  background-color: black !important;
+}
+
+
+
+
+
+
+.custom-gradient {
+  background: transparent;
+  backdrop-filter: blur(30px); /* Increased blur value */
+  -webkit-backdrop-filter: blur(30px); /* For Safari support with increased blur value */
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.01), rgba(55, 65, 81, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: Add a border for more glass effect */
+  border-radius: 16px; 
+}
+
+
+
+
+.custom-team-page-gradient {
+  background: transparent;
+  backdrop-filter: blur(30px); /* Increased blur value */
+  -webkit-backdrop-filter: blur(30px); /* For Safari support with increased blur value */
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.01), rgba(55, 65, 81, 0.8));
+}
+
+
+.custom-career-page-gradient {
+  background: transparent;
+  backdrop-filter: blur(30px); /* Increased blur value */
+  -webkit-backdrop-filter: blur(30px); /* For Safari support with increased blur value */
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.01), rgba(55, 65, 81, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.18); 
+}
+
+.custom-about-gradient {
+  background: transparent;
+  backdrop-filter: blur(30px); /* Increased blur value */
+  -webkit-backdrop-filter: blur(30px); /* For Safari support with increased blur value */
+  background-image: linear-gradient(120deg, rgb(42, 53, 49), rgba(30, 38, 51, 1));
+
+}
+
+
+.custom-NavBar {
+  background: linear-gradient(120deg, rgba(132, 136, 171, 0.1), rgba(121, 150, 197, 0.8)),
+              url('../public/Carrosserie/Banner.jpeg') no-repeat center center; /* Bild aus lokalem Pfad */
+  background-size: cover; /* Sicherstellen, dass das Bild den gesamten Hintergrund abdeckt */
+  backdrop-filter: blur(30px); /* Erhöhter Unschärfe-Wert */
+  -webkit-backdrop-filter:
+    blur(30px); /* Für Safari-Unterstützung mit erhöhtem Unschärfe-Wert */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: Fügen Sie einen Rand für mehr Glaswirkung hinzu */
+  border-radius: 16px; /* Optional: Runde die Ecken ab */
+}
+
+
+
+
+
+
+.partner-gradient {
+  background: transparent;
+  backdrop-filter: blur(30px); 
+  -webkit-backdrop-filter: blur(30px); 
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(58, 56, 56, 0.7));
+  z-index: 1;
+}
+
+
+
+
+.extra {
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .extra{
+    gap: 20px;
+  }
+  .D_extra{
+    gap: 20px;
+  }
+}
+
+
+
+
+
+
+
+.carBTN:hover{
+  scale: 105%;
+  
+}
+
+.loader {
+  height: 30px;
+  display: inline-block;
+}
+
+.loader > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px #B29146;
+  background: #e9cf8e;
+  float: left;
+  margin: 5px;
+  transform: scale(2);
+}
+
+.loader > div:nth-child(1) {
+  animation: anm-BL-53-move1 1s infinite linear;
+}
+
+.loader > div:nth-child(2) {
+  animation: anm-BL-53-move2 1s infinite linear;
+  animation-delay: 0.2s;
+}
+
+.loader > div:nth-child(3) {
+  animation: anm-BL-53-move3 1s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.loader > div:nth-child(4) {
+  animation: anm-BL-53-move4 1s infinite linear;
+  animation-delay: 0.4s;
+}
+
+.loader > div:nth-child(5) {
+  animation: anm-BL-53-move5 1s infinite linear;
+  animation-delay: 0.5s;
+}
+
+@keyframes anm-BL-53-move1 {
+  50% {
+    background: #FFBB00;
+    transform: scale(1);
+  }
+}
+
+@keyframes anm-BL-53-move2 {
+  50% {
+    background: #FFBB00;
+    transform: scale(1);
+  }
+}
+
+@keyframes anm-BL-53-move3 {
+  50% {
+    background: #FFBB00;
+    transform: scale(1);
+  }
+}
+
+@keyframes anm-BL-53-move4 {
+  50% {
+    background: #FFBB00;
+    transform: scale(1);
+  }
+}
+
+@keyframes anm-BL-53-move5 {
+  50% {
+    background: #FFBB00;
+    transform: scale(1);
+  }
+}
+  
+
+
+
+      .form-container {
+        width: 400px;
+        height: 400px; /* Decreased height */
+        background: linear-gradient(#212121, #212121) padding-box,
+                    linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+        border: 2px solid transparent;
+        padding: 16px 24px; /* Decreased padding */
+        font-size: 14px;
+        font-family: inherit;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        background-size: 200% 100%;
+        animation: gradient 5s ease infinite;
+        background-color: #282435; 
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .form-container button:active {
+        scale: 0.95;
+      }
+
+      .form-container .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .form-container .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .form-container .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #717171;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      .form-container .form-group input {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: #fff;
+        font-family: inherit;
+        background-color: transparent;
+        border: 1px solid #414141;
+      }
+
+      .form-container .form-group textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        resize: none;
+        color: #fff;
+        height: 96px;
+        border: 1px solid #414141;
+        background-color: transparent;
+        font-family: inherit;
+      }
+
+      .form-container .form-group input::placeholder {
+        opacity: 0.5;
+      }
+
+      .form-container .form-group input:focus {
+        outline: none;
+        border-color: #e81cff;
+      }
+
+      .form-container .form-group textarea:focus {
+        outline: none;
+        border-color: #e81cff;
+      }
+
+      .form-container .form-submit-btn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-start;
+        font-family: inherit;
+        color: #717171;
+        font-weight: 600;
+        width: 40%;
+        background: #313131;
+        border: 1px solid #414141;
+        padding: 12px 16px;
+        font-size: inherit;
+        gap: 8px;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+
+      .form-container .form-submit-btn:hover {
+        background-color: #fff;
+        border-color: #fff;
+      }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram {
+  fill: #cc39a4;
+}
+
+.card2 {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.twitter {
+  fill: #03A9F4;
+}
+
+.card3 {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.github {
+  fill: black;
+}
+
+.card4 {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.discord {
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+
+
+
+.button {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+}
+
+
+
+
+.button:before {
+  border: 2px solid #fffefe;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button:after {
+  border: 4px solid #96daf0;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+.button:hover:before,
+.button:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button:hover:after,
+.button:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+  display: flex;
+  position: absolute;
+  top: -12%;
+  left: -10%;
+}
+
+.button-elem {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 17px 18px 0 18px;
+  transform: rotate(180deg);
+  fill: #f0eeef;
+}
+
+.button:hover .button-box,
+.button:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-56px);
+}
