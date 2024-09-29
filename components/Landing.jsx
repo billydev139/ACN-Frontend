@@ -1,18 +1,14 @@
 "use client";
-// evry thing is update nowpnpm install --no-frozen-lockfile
-import React, { Suspense } from "react";
 
+import React, { Suspense } from "react";
 import { NextUIProvider } from "@nextui-org/react";
 import { StickyScroll } from "./Home/sticky-scroll-reveal";
-
 import { HeroParallax } from "./Home/hero-parallex";
-
 import ImagePreenter from "@/components/Home/ImagePreenter";
 import MainButton from "@/components/accets/MainButton";
 import Partners from "./accets/Partners";
 import AnimatedText from "./accets/common/AnimatedText";
 import Loading from "@/app/loading";
-
 
 const Landing = () => {
   const content = [
@@ -37,6 +33,7 @@ const Landing = () => {
         "Holen Sie Ihr repariertes Auto schnell und problemlos ab. Unser Echtzeit-Update-System benachrichtigt Sie sofort, wenn Ihr Fahrzeug abholbereit ist. Sparen Sie Zeit und genießen Sie die nahtlose Abwicklung ohne unnötige Wartezeiten.",
     },
   ];
+
   const images = [
     "/AcnAG/Home/Karusel/eigeneKreation1.avif",
     "/AcnAG/Home/Karusel/eigeneKreation2.avif",
@@ -49,6 +46,7 @@ const Landing = () => {
     "/AcnAG/Home/Karusel/eigeneKreation9.avif",
     "/AcnAG/Home/Karusel/eigeneKreation10.avif",
   ];
+
   const products = [
     {
       title: "Autocenter Niederbipp AG - Carrosserie Meisterwerk",
@@ -135,38 +133,29 @@ const Landing = () => {
         <div className="w-screen h-screen relative overflow-hidden">
           <video
             src="/AcnAG/Video/Intro.mp4"
-            className="w-full h-full object-cover  z-0 overflow-hidden"
+            className="w-full h-full object-cover z-0"
             autoPlay
             muted
             loop
+            playsInline
           />
           <div className="w-screen h-screen bg-black/45 absolute z-10 top-0 left-0"></div>
-          <div className="flex flex-col items-center text-center md:w-[40%] w-[80%] gap-4 text-white h-[20rem] absolute z-10 bottom-10 left-[50%] translate-x-[-50%] justify-center ">
-            <p
-              className="text-lg"
-            >
-              Carrosserie & Verkauf/Ankauf
+          <div className="flex flex-col items-center text-center md:w-[40%] w-[80%] gap-4 text-white h-[20rem] absolute z-10 bottom-10 left-[50%] translate-x-[-50%] justify-center">
+            <p className="text-lg">Carrosserie & Verkauf/Ankauf</p>
+            <p className="text-4xl text-brGold">
+              <AnimatedText>AutoCenter Niederbipp AG</AnimatedText>
             </p>
-            <p
-              className="text-4xl text-brGold"
-            >
-              <AnimatedText>
-              AutoCenter Niederbipp AG
-              </AnimatedText>
-            </p>
-            <div
-              className="flex text-xs items-center"
-            >
+            <div className="flex text-xs items-center">
               <p>ENTDECKEN SIE UNSER AUTOCENTER IN NIEDERBIPP</p>
               <MainButton />
             </div>
           </div>
         </div>
-        <Suspense fallback={<Loading/>}>
-        <StickyScroll content={content} />
-        <HeroParallax products={products} />
-        <ImagePreenter />
-        <Partners />
+        <Suspense fallback={<Loading />}>
+          <StickyScroll content={content} />
+          <HeroParallax products={products} />
+          <ImagePreenter />
+          <Partners />
         </Suspense>
       </section>
     </NextUIProvider>
