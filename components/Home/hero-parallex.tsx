@@ -107,6 +107,7 @@ export const Header = () => {
   return (
     <div className="max-w-full relative md:mx-auto py-20 md:py-40 md:px-4 w-full left-0 top-20">
       <video
+        preload="none"
         src="AcnAG/Video/Second.mp4"
         className="w-full min-h-[70vh] md:min-h-screen object-cover absolute z-0 top-[90%] md:top-[0%]"
         data-aos="zoom-in"

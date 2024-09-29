@@ -13,6 +13,7 @@
       url('/font/TTSupermolotNeue-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Light (300) Italic */
@@ -26,6 +27,7 @@
       url('/font/TTSupermolotNeue-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Regular (400) Normal */
@@ -39,6 +41,7 @@
       url('/font/TTSupermolotNeue-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Regular (400) Italic */
@@ -52,6 +55,7 @@
       url('/font/TTSupermolotNeue-RegularItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Medium (500) Normal */
@@ -65,6 +69,7 @@
       url('/font/TTSupermolotNeue-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Medium (500) Italic */
@@ -78,6 +83,7 @@
       url('/font/TTSupermolotNeue-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
 }
 
 /* DemiBold (600) Normal */
@@ -91,6 +97,7 @@
       url('/font/TTSupermolotNeue-DemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 /* DemiBold (600) Italic */
@@ -104,6 +111,7 @@
       url('/font/TTSupermolotNeue-DemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
+  font-display: swap;
 }
 
 /* Bold (700) Normal */
@@ -117,6 +125,7 @@
       url('/font/TTSupermolotNeue-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Bold (700) Italic */
@@ -130,6 +139,7 @@
       url('/font/TTSupermolotNeue-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 

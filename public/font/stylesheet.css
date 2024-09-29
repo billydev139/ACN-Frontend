@@ -9,6 +9,7 @@
         url('TTSupermolotNeue-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Light (300) Italic */
@@ -22,6 +23,7 @@
         url('TTSupermolotNeue-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
 }
 
 /* Regular (400) Normal */
@@ -35,6 +37,7 @@
         url('TTSupermolotNeue-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Regular (400) Italic */
@@ -48,6 +51,7 @@
         url('TTSupermolotNeue-RegularItalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
 }
 
 /* Medium (500) Normal */
@@ -61,6 +65,7 @@
         url('TTSupermolotNeue-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Medium (500) Italic */
@@ -74,6 +79,7 @@
         url('TTSupermolotNeue-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
 }
 
 /* DemiBold (600) Normal */
@@ -87,6 +93,7 @@
         url('TTSupermolotNeue-DemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 /* DemiBold (600) Italic */
@@ -100,6 +107,7 @@
         url('TTSupermolotNeue-DemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 /* Bold (700) Normal */
@@ -113,6 +121,7 @@
         url('TTSupermolotNeue-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Bold (700) Italic */
@@ -126,4 +135,5 @@
         url('TTSupermolotNeue-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
+    font-display: swap;
 }

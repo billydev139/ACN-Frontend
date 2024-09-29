@@ -132,6 +132,7 @@ const Landing = () => {
       <section className="w-full overflow-x-hidden bg-[#202020]">
         <div className="w-screen h-screen relative overflow-hidden">
           <video
+            preload="none"
             src="/AcnAG/Video/Intro.mp4"
             className="w-full h-full object-cover z-0"
             autoPlay

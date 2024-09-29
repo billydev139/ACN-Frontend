@@ -18,6 +18,7 @@ function VehicleForm() {
       {/* front theam page */}
       <div className="w-screen h-screen relative overflow-hidden z-0">
         <video
+          preload="none"
           src="/AcnAG/Video/intro.mp4"
           className="w-full h-full object-cover overflow-hidden"
           autoPlay
