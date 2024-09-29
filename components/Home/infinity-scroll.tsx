@@ -12,9 +12,7 @@ export const TeamSlider = ({
   className,
 }: {
   items: {
-    // quote: string;
     name: string;
-    // title: string;
     image: string;
   }[];
   direction?: "left" | "right";
@@ -23,79 +21,43 @@ export const TeamSlider = ({
   className?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
 
-  useEffect(() => {
-    addAnimation();
-  }, []);
-  const [start, setStart] = useState(false);
-  function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
-
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
-
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
-  }
-  const getDirection = () => {
-    if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards",
-        );
-      } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse",
-        );
-      }
-    }
+  // Define speed and direction via CSS classes
+  const getSpeedClass = () => {
+    if (speed === "fast") return "duration-20s";
+    if (speed === "normal") return "duration-40s";
+    return "duration-80s";
   };
-  const getSpeed = () => {
-    if (containerRef.current) {
-      if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "20s");
-      } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
-      }
-    }
+
+  const getDirectionClass = () => {
+    return direction === "left" ? "forwards" : "reverse";
   };
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20   overflow-hidden  bg-black",
-        className,
+        "scroller relative z-20 overflow-hidden bg-black",
+        className
       )}
     >
       <ul
-        ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
-          pauseOnHover && "hover:[animation-play-state:paused]",
+          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap animate-scroll",
+          getSpeedClass(),
+          getDirectionClass(),
+          pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => {
-          return(
+        {/* Directly duplicate items in JSX */}
+        {items.concat(items).map((item, idx) => (
           <li
-            className="w-auto h-auto relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 "
+            className="w-auto h-auto relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
             }}
-            key={item.name}
+            key={idx}
           >
             <div className="w-auto h-auto relative text-xl hover:text-3xl">
               <Image
@@ -104,11 +66,14 @@ export const TeamSlider = ({
                 height={250}
                 width={250}
                 src={item.image}
+                loading="lazy" // Lazy load images for better performance
               />
-              <p className="text-white absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">{item.name}</p>
+              <p className="text-white absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]">
+                {item.name}
+              </p>
             </div>
-          </li>)
-        })}
+          </li>
+        ))}
       </ul>
     </div>
   );
