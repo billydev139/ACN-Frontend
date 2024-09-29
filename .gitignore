@@ -903,3 +903,11 @@ node_modules
 .next/static/webpack/app/layout.fa9908078777c2c0.hot-update.js
 .next/static/webpack/app/page.fa9908078777c2c0.hot-update.js
 .next/static/webpack/app/home/page.fa9908078777c2c0.hot-update.js
+.next/server/app/about/page_client-reference-manifest.js
+.next/server/app/corrosion/page_client-reference-manifest.js
+.next/server/app/corrosion/page.js
+.next/static/webpack/_app-pages-browser_components_Home_Navbar_jsx.638c5b06633fa274.hot-update.js
+.next/static/webpack/638c5b06633fa274.webpack.hot-update.json
+.next/static/webpack/webpack.638c5b06633fa274.hot-update.js
+.next/static/webpack/app/layout.638c5b06633fa274.hot-update.js
+.next/static/webpack/app/sales/page.638c5b06633fa274.hot-update.js
