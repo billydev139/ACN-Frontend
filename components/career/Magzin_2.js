@@ -185,10 +185,10 @@ function Magzin() {
                                         {/* details */}
                                         <div className='w-[80%]  flex flex-col'>
                                             <div className='semibold text-base mt-2'>
-                                                Autocenter Niderbipp AG steht für Weltklasseleistungen, sei es in der Medizintechnik oder mit den Produkten und Systemen unserer Marke Mobatime. Doch das geht nur mit den richtigen Fachkräften.
+                                                Autocenter Niderbipp AG steht für Weltklasseleistungen, sei es in der Autotechnik oder mit der Carrosserie. Doch das geht nur mit den richtigen Fachkräften.
                                             </div>
                                             <div className='text-[gray] text-xs mt-2'>Softwareentwicklung Netzwerkdechnik Informationstechningin, Elektronikentwicklung LetterplattenbesiGekung, äusserste Präzision beim Präsen Drehen, Bohren, Schleifen, State of the An Oberflächenbehandlungen, Bearbeitung modermater und sentische Wwkatoffedas sind nur einige der Kompetanzen liber die una Lintermen verfügt. Als Mitglied eines unserer Teams bist du Tell der Zukunft. Und damn du selbot stets am Puis des Zeitgehen bebet, sorgen wie mit termen und externen Weiterbildungsmöglichkeiten für deine persönliche Entwicidung</div>
-                                            <div className='text-[gray] text-xs mt-2 mb-2'>Unsere Recruited Alina Baber freut sich auf dune Kontaktnahme</div>
+                                            <div className='text-[gray] text-xs mt-2 mb-2'>Unsere Recruited Rijard Sadriu freut sich auf dune Kontaktnahme</div>
                                             <div className='font-semibold text-white text-[14px]'>Rijard Sadriu, Minushe Sadriji & Silas Rotzetter</div>
                                             <div className='text-white text-sm'>Autocenter Niederbipp AG Team</div>
                                             <div className='text-sm mt-3 flex-col gap-2'>
@@ -203,7 +203,7 @@ function Magzin() {
                                     </div>
                                     {/* right half */}
                                     <div className='w-[55%] h-full flex items-center'>
-                                        <img src="/career/passion.jpeg" alt="loading" className='w-[100%] h-1/2 2xl:h-[75%] object-cover' />
+                                        <img src="/AcnAG/Karriere/Home/Team.avif" alt="loading" className='w-[100%] h-1/2 2xl:h-[75%] object-cover' />
                                     </div>
                                 </div>
                             </div>
@@ -291,15 +291,8 @@ function Magzin() {
                                     Hier bist du richtig. Die Ausbildung der Lernenden hat bei der Autocenter Niederbipp AG einen hohen Stellenwert, nicht zuletzt, weil wir an den Standort unseres Hauptsitzes und seine Fachkräfte glauben. In Sumiswald bieten wir rund 20 Lehrstellen in sieben verschiedenen Berufen:
                                 </p>
                                 <ul className="text-sm ml-8 text-brGold leading-relaxed list-disc">
-                                    <li className="">
-                                        <div className="hover:underline inline-block whitespace-nowrap">Polymechaniker/In EFZ <span className="text-white inline-block whitespace-nowrap"> (klick auf den Beruf für mehr Informationen)</span></div>
-
-                                    </li>
                                     <li className="">Automobil-Fachmann/-frau EFZ</li>
                                     <li className="">Carrosserielackierer/in EFZ</li>
-                                    <li className="">Informatiker/in Plattformentwicklung EFZ</li>
-                                    <li className="">ICT-Fachmann/frau EFZ</li>
-                                    <li className="">Logistiker/In EFZ</li>
                                     <li className="">Kaufmann/frau EFZ</li>
                                 </ul>
                                 <p className="text-base mt-4 mb-4 leading-normal">

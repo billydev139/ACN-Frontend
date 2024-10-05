@@ -251,7 +251,7 @@ const CarSH = () => {
       {/* <div className='md:block hidden w-[30rem] h-[20rem] absolute bg-[#EAEFF2] top-[69%] left-[53%] z-1'></div> */}
       <div className="md:block hidden z-0 relative">
         <img
-          src="AcnAG/About/Karriere.jpeg"
+          src="AcnAG/About/Karriere.avif"
           alt="loading"
           className="w-full h-full  object-cover scale-125"
         />
