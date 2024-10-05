@@ -60,8 +60,8 @@ const AnimatedMenu = ({ isOpen, setIsOpen }) => {
 
       {/* Navbar Sliding In */}
       <div className='relative'>
-      <Navbar isOpen={isOpen} closeNavbar={() => setIsOpen(false)} navHandler={handleToggle} />
-      {isOpen && (<img src="/icon/footer/company_logo_2.svg" className='w-60 h-60 object-cover top-0 fixed z-[53]' />)}
+        <Navbar isOpen={isOpen} closeNavbar={() => setIsOpen(false)} navHandler={handleToggle} />
+        {isOpen && (<img src="/icon/footer/company_logo_2.svg" className='w-60 h-60 object-cover top-0 fixed z-[53]' />)}
       </div>
     </>
   );
