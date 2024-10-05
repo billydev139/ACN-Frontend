@@ -344,14 +344,9 @@ function Magzin() {
             <ul className="text-sm ml-8 text-[#B29146] list-disc">
                 <li>
                     <a href="#" className="hover:underline">
-                        Polymechaniker/In EFZ
+                        Carrosserielackierer/In EFZ
                     </a>
                 </li>
-                <li>Konstrukteur/In EFZ</li>
-                <li>Elektroniker/In EFZ</li>
-                <li>Informatiker/in Plattformentwicklung EFZ</li>
-                <li>ICT-Fachmann/frau EFZ</li>
-                <li>Logistiker/In EFZ</li>
                 <li>Kaufmann/frau EFZ</li>
             </ul>
 
@@ -388,19 +383,7 @@ function Magzin() {
                                 <p className="text-base mb-2">Hast du Lust in einem spannenden Umfeld erste Erfahrungen zu schnuppern? Bei uns erhältst du Einblick in die Welt verschiedener Berufe.</p>
                                 <ul className="text-sm ml-8 leading-relaxed my-2 list-disc">
                                     <li>
-                                        Polymechaniker/in EFZ – wenn es dir gefällt, dass die Späne fliegen
-                                    </li>
-                                    <li>
-                                        ICT-Fachmann/frau EFZ – wenn es dir zusagt, dass alles korrekt verkabelt und konfiguriert wurde.
-                                    </li>
-                                    <li>
-                                        Informatiker/in Plattformentwicklung EFZ – 11001000 01100001 01101100 01101100 01101111 00001010 (Hallo in Binärcode)
-                                    </li>
-                                    <li>
-                                        Logistiker/in EFZ – wenn es dich freut, dass es reibungslos läuft
-                                    </li>
-                                    <li>
-                                        Konstrukteur/in EFZ – wenn du begeistert bist, dass aus deinen Zeichnungen riesige Teile hergestellt werden
+                                        Carrosserie-Lackierer/in EFZ – perfekt für dich, wenn du es liebst, Fahrzeuge mit glänzenden Farben zu versehen
                                     </li>
                                     <li>
                                         Kaufmann/frau EFZ – wenn das 10-Finger-System für dich keine Hürde ist und du dich für Zahlen begeisterst
@@ -439,10 +422,6 @@ function Magzin() {
                                     {/* List of professions */}
                                     <ul className="text-sm ml-8 list-disc">
                                         <li>Carrosserielackierer/in EFZ – perfekt für dich, wenn du es liebst, Fahrzeuge mit glänzenden Farben zu versehen</li>
-                                        <li>ICT-Fachmann/frau EFZ – wenn es dir zusagt, dass alles korrekt verkabelt und konfiguriert wurde</li>
-                                        <li>Automobilfachmann/frau EFZ – ideal für dich, wenn du Motoren zum Leben erwecken möchtest</li>
-                                        <li>Logistiker/in EFZ – wenn es dich freut, dass es reibungslos läuft</li>
-                                        <li>Konstrukteur/in EFZ – wenn du begeistert bist, dass aus deinen Zeichnungen riesige Teile hergestellt werden</li>
                                         <li>Kaufmann/frau EFZ – wenn das 10-Finger-System für dich keine Hürde ist und du dich für Zahlen begeisterst</li>
                                     </ul>
 
@@ -452,7 +431,7 @@ function Magzin() {
                                     </p>
 
                                     {/* Button */}
-                                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                                    <button className="bg-brGold hover:bg-brGold text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                                         Hier geht's zur Anmeldung
                                     </button>
                                 </div>

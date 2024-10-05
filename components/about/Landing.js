@@ -294,19 +294,19 @@ const ImgCards = () => {
         {/* for desktop */}
         <div className="justify-center items-center w-full h-full gap-4 md:flex hidden">
           <Card
-            src={"AcnAG/News/eroeffnung-news.jpeg"}
+            src={"AcnAG/News/eroeffnung-news.avif"}
             heading="AutoCenter Niederbipp"
             subHeading="Neu Eröffnung Auto Center Niederbipp"
             dis="Erleben Sie die Neueröffnung des Auto Centers Niederbipp in Niederbipp! Unsere hochmoderne Carrosserie-Werkstatt bietet erstklassigen Service und fortschrittliche Reparaturtechniken für alle Fahrzeugmarken."
           />
           <Card
-            src={"AcnAG/News/Ersatzwagen-news.jpeg"}
+            src={"AcnAG/News/ersatzwagen-news.avif"}
             heading="AutoCenter Niederbipp"
             subHeading="Unsere Ersaatzfahrzeuge – für jeden was dabei"
             dis="Entdecken Sie die neuen Ersatzfahrzeuge im Auto Center Niederbipp! Unsere Flotte umfasst das neueste Mercedes A-Klasse Modell, das höchsten Fahrkomfort und modernste Technologie bietet. Ideal für Ihre Mobilität während der Reparatur Ihres Fahrzeugs."
           />
           <Card
-            src={"AcnAG/News/Verkauf-news.jpeg"}
+            src={"AcnAG/News/verkauf-news..avif"}
             heading="AutoCenter Niederbipp"
             subHeading="Erster Autoverkauf am neuen Standort"
             dis="Besuchen Sie uns am neuen Standort des AutoCenters Niederbipp und sichern Sie sich Ihren ersten Gebrauchtwagen mit Qualität und Garantie. Franco Mantellassi berät Sie persönlich."
@@ -326,19 +326,19 @@ const ImgCards = () => {
             />
           </div>
           <Card
-            src="AcnAG/News/eroeffnung-news.jpeg"
+            src="AcnAG/News/eroeffnung-news.avif"
             heading="CARS"
             subHeading="Neu Eröffnung Auto Center Niederbipp"
             dis="Erleben Sie die Neueröffnung des Auto Centers Niederbipp in Niederbipp! Unsere hochmoderne Carrosserie-Werkstatt bietet erstklassigen Service und fortschrittliche Reparaturtechniken für alle Fahrzeugmarken."
           />
           <Card
-            src="AcnAG/News/Ersatzwagen-news.jpeg"
+            src="AcnAG/News/ersatzwagen-news.avif"
             heading="PASSION"
             subHeading="Unsere Ersaatzfahrzeuge – für jeden was dabei "
             dis="Entdecken Sie die neuen Ersatzfahrzeuge im Auto Center Niederbipp! Unsere Flotte umfasst das neueste Mercedes A-Klasse Modell, das höchsten Fahrkomfort und modernste Technologie bietet. Ideal für Ihre Mobilität während der Reparatur Ihres Fahrzeugs. "
           />
           <Card
-            src={"AcnAG/News/Verkauf-news.jpeg"}
+            src={"AcnAG/News/verkauf-news.avif"}
             heading="AutoCenter Niederbipp"
             subHeading="Erster Autoverkauf am neuen Standort"
             dis="Besuchen Sie uns am neuen Standort des AutoCenters Niederbipp und sichern Sie sich Ihren ersten Gebrauchtwagen mit Qualität und Garantie. Franco Mantellassi berät Sie persönlich."
