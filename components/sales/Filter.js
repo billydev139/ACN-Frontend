@@ -192,7 +192,7 @@ export default function Filter() {
           <Image width={500} height={500}
                   loading="lazy"
 
-            src="/AcnAG/sales/sales.jpeg"
+            src="/AcnAG/Sales/sales.avif"
             alt="loading"
             className="w-full h-full object-cover"
           />
