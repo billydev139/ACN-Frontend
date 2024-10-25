@@ -5,6 +5,7 @@ out
 dist
 build
 node_modules
+.env.local
 .next/app-build-manifest.json
 .next/build-manifest.json
 .next/package.json
