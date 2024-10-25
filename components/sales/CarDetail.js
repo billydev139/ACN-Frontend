@@ -244,7 +244,7 @@ function FinalDisplay({ data, setDis }) {
     }
 
   }, [responseSale])
-  console.log({ data });
+  console.log({ formData });
   const handleImgClick = (imgUrl) => {
     setMainImg(imgUrl);
   };
