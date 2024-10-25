@@ -1,13 +1,17 @@
 'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from '@nextui-org/react';
-import React, { Suspense, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { faDownload, faFilePdf, faLocation, faPhone } from '@fortawesome/free-solid-svg-icons';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import Timings from "./Timings"
 import TextDetails from './TextDetails'
 import Image from 'next/image';
+import { useSelector } from "react-redux"
+import { useSalesFormMutation } from '../../store/apis/global.api';
+import useEnhancedEffect from '@mui/material/utils/useEnhancedEffect';
+import { toast } from 'react-toastify';
 
 function CarDetail({ data, onClick }) {
   const [mainImg, setMainImg] = useState(data.imageUrl[0]);
@@ -45,7 +49,7 @@ function CarDetail({ data, onClick }) {
         <div className='flex items-center font-bold md:text-3xl text-lg'>{data.price}</div>
 
         <div className='flex flex-col h-auto text-lg gap-1 text-brGold'>
-          <div className='flex items-center gap-2'><Image width={500} height={500} loading="lazy" src="/icon/sales/cardetails/payments.svg" alt="PAYMET"  className='w-7 h-7 object-cover' /><div>{`${Math.round(data.instalment)}- pro Monat mit Leasingvertrag`}</div></div>
+          <div className='flex items-center gap-2'><Image width={500} height={500} loading="lazy" src="/icon/sales/cardetails/payments.svg" alt="PAYMET" className='w-7 h-7 object-cover' /><div>{`${Math.round(data.instalment)}- pro Monat mit Leasingvertrag`}</div></div>
           <div className='flex items-center gap-2'><Image width={500} height={500} loading="lazy" src="/icon/sales/cardetails/bank.svg" alt="loading" className='w-7 h-7 object-cover' /><div>Kreditrate berechnen</div></div>
           <div className='flex items-center gap-2'><Image width={500} height={500} loading="lazy" src="/icon/sales/cardetails/publish.svg" alt="loading" className='w-7 h-7 object-cover' /><div>Versicherungsprämie berechnen</div></div>
 
@@ -188,7 +192,59 @@ export default CarDetail;
 
 function FinalDisplay({ data, setDis }) {
   const [mainImg, setMainImg] = useState(data.imageUrl[0]);
+  const [submitSalesQuery, responseSale] = useSalesFormMutation()
+  // const state=useSelector((state)=>state)
+  // console.log("state",state)
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    street: "",
+    zipCode: "",
+    location: "",
+    country: "",
+    email: "",
+    phone: "",
+    news: "",
+    car: data.name
+  });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(formData);
+    submitSalesQuery(formData)
+
+  };
+  useEffect(() => {
+    console.log({ responseSale });
+    if (responseSale.isSuccess) {
+      setFormData({
+        name: "",
+        company: "",
+        street: "",
+        zipCode: "",
+        location: "",
+        country: "",
+        email: "",
+        phone: "",
+        news: "",
+        car: data.name
+      })
+      toast.success("Contact shared")
+    }
+    if (responseSale.isError) {
+
+      toast.error("Failed to share Contact info")
+    }
+
+  }, [responseSale])
+  console.log({ data });
   const handleImgClick = (imgUrl) => {
     setMainImg(imgUrl);
   };
@@ -273,90 +329,134 @@ function FinalDisplay({ data, setDis }) {
             078 900 76 44
           </button>
 
-          <form class="w-full">
-            <div class="space-y-4">
-              <div class="bg-[#181818] p-3 grid grid-cols-1 md:grid-cols-2 gap-4 rounded-lg">
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">Name<span class="text-brGold">*</span></label>
+          <form className="w-full" onSubmit={handleSubmit}>
+            <div className="space-y-4">
+              <div className="bg-[#181818] p-3 grid grid-cols-1 md:grid-cols-2 gap-4 rounded-lg">
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    Name<span className="text-brGold">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">Firma<span class="text-brGold">*</span></label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    Firma<span className="text-brGold">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="company"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">Straße + Nr<span class="text-brGold">*</span></label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    Straße + Nr<span className="text-brGold">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="street"
+                    value={formData.street}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">PLZ<span class="text-brGold">*</span></label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    PLZ<span className="text-brGold">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="zipCode"
+                    value={formData.zipCode}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">Ort<span class="text-brGold">*</span></label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    Ort<span className="text-brGold">*</span>
+                  </label>
                   <input
                     type="text"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">Land<span class="text-brGold">*</span></label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    Land<span className="text-brGold">*</span>
+                  </label>
                   <select
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="country"
+                    value={formData.country}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   >
-                    <option>Land wählen</option>
+                    <option value="">Land wählen</option>
+                    <option value="Germany">Germany</option>
+                    <option value="USA">USA</option>
+                    {/* Add more options as needed */}
                   </select>
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">E-Mail<span class="text-brGold">*</span></label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">
+                    E-Mail<span className="text-brGold">*</span>
+                  </label>
                   <input
                     type="email"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                     required
                   />
                 </div>
-                <div class="flex flex-col gap-1">
-                  <label class="text-sm text-white">Telefon</label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-sm text-white">Telefon</label>
                   <input
                     type="text"
-                    class="p-2 bg-brGray border border-gray-700 rounded text-white"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="p-2 bg-brGray border border-gray-700 rounded text-white"
                   />
                 </div>
               </div>
             </div>
 
-            <div class="col-span-2 flex flex-col bg-[#181818] p-3 mt-3 rounded-lg">
-              <label class="text-sm text-white">Nachricht</label>
+            <div className="col-span-2 flex flex-col bg-[#181818] p-3 mt-3 rounded-lg">
+              <label className="text-sm text-white">Nachricht</label>
               <textarea
-                class="p-2 bg-brGray border border-gray-700 rounded h-24 text-white"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="p-2 bg-brGray border border-gray-700 rounded h-24 text-white"
               ></textarea>
             </div>
 
-            <div class="bg-[#181818] mt-3 p-3 rounded-lg">
-              <Button
+            <div className="bg-[#181818] mt-3 p-3 rounded-lg">
+              <button
                 type="submit"
-                class="bg-brGold text-white px-4 py-2 rounded-lg"
+                className="bg-brGold text-white px-4 py-2 rounded-lg"
               >
                 Absenden
-              </Button>
+              </button>
             </div>
           </form>
         </div>

@@ -261,11 +261,10 @@ export default function Filter() {
 
       <div className="flex w-[85%] justify-center p-4">
         {!Detail && (
-          <divagination
+          <Pagination
             total={Math.ceil(filteredCarsData.length / postPerPage)}
             initialPage={1}
             onChange={(page) => setPage(page)}
-
           />
         )}
       </div>

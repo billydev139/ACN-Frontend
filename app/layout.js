@@ -5,7 +5,8 @@ import Footer from '@/components/footer';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
-
+import  Providers  from './provider';
+import  ToastProvider  from './ToastProvider';
 // Import AnimatedMenu correctly
 const AnimatedMenu = dynamic(() => import('@/components/Home/Navbar'), { ssr: false });
 
@@ -23,7 +24,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-supermolot relative">
         {/* Logo aligned with the Navbar */}
-
+        <Providers>
+        <ToastProvider>
         <div
           className={`transition-opacity duration-500 w-[20vw] h-[20vh] absolute z-50
     ${isNavbarOpen ? 'opacity-0' : 'opacity-100'}
@@ -62,6 +64,9 @@ export default function RootLayout({ children }) {
         ></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </ToastProvider>
+        </Providers>
+        
       </body>
     </html>
   );
