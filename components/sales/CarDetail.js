@@ -443,8 +443,8 @@ function FinalDisplay({ data, setDis }) {
             <div className="col-span-2 flex flex-col bg-[#181818] p-3 mt-3 rounded-lg">
               <label className="text-sm text-white">Nachricht</label>
               <textarea
-                name="message"
-                value={formData.message}
+                name="news"
+                value={formData.news}
                 onChange={handleChange}
                 className="p-2 bg-brGray border border-gray-700 rounded h-24 text-white"
               ></textarea>
