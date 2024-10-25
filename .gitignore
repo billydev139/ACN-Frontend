@@ -991,5 +991,4 @@ node_modules
 .next/static/webpack/webpack.fa4f9ada1bd56072.hot-update.js
 .next/static/webpack/app/layout.87ca05726592f04f.hot-update.js
 .next/static/webpack/app/layout.fa4f9ada1bd56072.hot-update.js
-. e n v . l o c a l  
- 
+.env.local
