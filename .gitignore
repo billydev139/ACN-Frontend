@@ -1,4 +1,9 @@
 .next
+.swc
+_static
+out
+dist
+build
 node_modules
 .next/app-build-manifest.json
 .next/build-manifest.json
